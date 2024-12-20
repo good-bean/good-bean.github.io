@@ -1,7 +1,8 @@
 ---
 layout: post
-title: An Introduction to the Site
+title: Welcome to my portfolio site!
 categories: [Introduction, Miscellaneous]
+excerpt: I will be adding my projects and progress here as I go. If you would like to collaborate on a project, feel free to reach out!
 ---
 
 Welcome to my portfolio site! I will be adding my projects and progress here as I go. Some content I will be adding in the near future:
