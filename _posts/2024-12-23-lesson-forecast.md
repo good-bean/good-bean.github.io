@@ -42,7 +42,7 @@ What this broke down to is total lessons (T) times the days per lesson (D), divi
 
 This is where the work in Excel began. I had broken it down into more manageable pieces and made it much easier to calculate. Below is a sample of what that looked like:
 
-![Excel screenshot with formula '=ROUND((B2*C2)\/D2,0)', affected cell highlighted.][image2]* 
+![Excel screenshot with formula =ROUND((B2*C2)/D2,0), affected cell highlighted.][image2]* 
 *Calculate the number of weeks to complete the subject.*
 
 Here, you can see that I added the **ROUND()** function in order to account for any calculations that give me a decimal, rather than a whole number. Remember, we’re predicting/forecasting, not going for exact numbers. The next thing that I needed to add was a start date from which to calculate the forecasted end date. Simple enough to add the date to the next column. The next task was to calculate the end date based on the weeks that were calculated before.  
