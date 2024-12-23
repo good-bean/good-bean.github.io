@@ -42,23 +42,23 @@ What this broke down to is total lessons (T) times the days per lesson (D), divi
 
 This is where the work in Excel began. I had broken it down into more manageable pieces and made it much easier to calculate. Below is a sample of what that looked like:
 
-![Excel screenshot with formula =ROUND((B2*C2)/D2,0), affected cell highlighted.][image2]* 
+![Excel screenshot with formula '=ROUND((B2 times C2) divided by D2,0)', affected cell highlighted.][image2]* 
 *Calculate the number of weeks to complete the subject.*
 
 Here, you can see that I added the **ROUND()** function in order to account for any calculations that give me a decimal, rather than a whole number. Remember, we’re predicting/forecasting, not going for exact numbers. The next thing that I needed to add was a start date from which to calculate the forecasted end date. Simple enough to add the date to the next column. The next task was to calculate the end date based on the weeks that were calculated before.  
 I found it to be simpler than I had imagined previously. A simple calculation of taking the start date, then adding the weeks multiplied by seven: *Start \+ (Weeks x 7\)*  
-![Excel screenshot with formula '=F2+(E2*7)', affected cell highlighted.][image3]  
+![Excel screenshot with formula '=F2+(E2 times 7)', affected cell highlighted.][image3]  
 *Calculate the end date based on the start date and the number of weeks to completion.*
 
 The next part of this problem was tricky since it isn’t as simple to calculate the remaining lessons in Excel. After a bit of research, I found the less often used **DATEDIF()** function, which takes two dates and returns the difference in whichever unit you indicate. For instance, DATEDIF(start\_date, end\_date, "d") would return the difference in days. One can extrapolate what *“m”* or *“y”* returns. This is well and good, however, we don’t need the result in days, we need it in weeks, so I divided it by seven. I found it best to work the original formula in reverse to find the remaining lessons. In other words:  
 ![Variables 'Date Diff', 'W', and 'D'  arranged as 'Date Diff' multiplied by 'W', divided by 'D'][image4]
 
 Here is what that looks like:  
-![Excel screenshot with formula '=ROUND((DATEDIF(TODAY(),G2,"d")/7)*D2/C2,0)', affected cell highlighted][image5]  
+![Excel screenshot with formula '=ROUND((DATEDIF(TODAY(),G2,"d") divided by 7) times D2 divided by C2,0)', affected cell highlighted][image5]  
 *Calculate remaining lessons by reversing the formula.*
 
 Finally, I revisit the original formula to get the remaining weeks by using the remaining lessons as the total (T). To note for inquiring minds, there were instances where I needed to divide the number of lessons by the number of days per lesson. This is because there are two subjects that are based on pages, rather than lessons. In this case, it was for Writing and Language Arts, which we typically do two pages per lesson, twice a week. I added notes in the spreadsheet to indicate how we arrived at the lesson number to avoid confusion.  
-![Excel screenshot with formula '=ROUND((H2*C2)/D2,0)', affected cell highlighted.][image6]  
+![Excel screenshot with formula '=ROUND((H2 times C2) divided by D2,0)', affected cell highlighted.][image6]  
 *Calculate remaining weeks based on remaining lessons.*
 
 ## The Solution
