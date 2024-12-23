@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Lesson Forecast
 categories: [Data Analysis, Excel, Problem Solving]
 ---
