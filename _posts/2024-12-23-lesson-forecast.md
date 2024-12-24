@@ -29,7 +29,7 @@ For the weeks, we would first need to find our parameters. Here’s how I broke 
 I took a sample of what Mason already had to begin to simplify the calculation down to the most basic formula. The intent was to generalize it to the point where it could be scaled and manipulated to fit our needs. At first, I thought we would need to figure out the smallest whole number of weeks it takes to complete a lesson. This did not work, as it would not be generalized enough to apply to all subjects, since it involves more manual calculation on our part. The mistake I had made was thinking of each week in terms of full weeks, rather than the number of days in each week that are taken to work on each subject. Although I was able to calculate the correct number, it was more complicated than it needed to be. Here’s how that looked:
 
 <!-- > ***(Total lessons ÷ Work days) × Days per lesson*** -->
-$$\large{(Total\ lessons\ \div\ Work\ days)}\times{Days\ per\
+$$\large\left(\frac{Total\ lessons}{Work\ days}\right)\times{Days\ per\
  lesson}$$ 
 
 ###  Finalized formula
@@ -37,7 +37,7 @@ $$\large{(Total\ lessons\ \div\ Work\ days)}\times{Days\ per\
 Of course, this isn’t a bad approach, but I wasn’t thinking of it in terms of conversion of Lessons \-\> Weeks. When I finally realized that it’s best to think about it in terms of converting units (thanks to Mason’s input, based on his experience in chemistry), it made much more sense:
 
 <!-- > ***(Lessons × Days per Lesson ) ÷ Days per Week \= Weeks*** -->
-$$\large{(Lessons\times Days\ per\ lesson)}\div {Days\ per\ week} = Weeks$$
+$$\large\frac{Lessons\times Days\ per\ lesson}{Days\ per\ week}$$
 
 What this broke down to is total lessons (T) times the days per lesson (D), divided by days per week (W):
 
