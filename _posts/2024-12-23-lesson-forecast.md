@@ -53,7 +53,8 @@ I found it to be simpler than I had imagined previously. A simple calculation of
 The next part of this problem was tricky since it isn’t as simple to calculate the remaining lessons in Excel. After a bit of research, I found the less often used **DATEDIF()** function, which takes two dates and returns the difference in whichever unit you indicate. For instance, DATEDIF(start\_date, end\_date, "d") would return the difference in days. One can extrapolate what *“m”* or *“y”* returns. This is well and good, however, we don’t need the result in days, we need it in weeks, so I divided it by seven. I found it best to work the original formula in reverse to find the remaining lessons. In other words:  
 ![Variables 'Date Diff', 'W', and 'D'  arranged as 'Date Diff' multiplied by 'W', divided by 'D'](../images/lesson-forecast/image8.png)
 
-Here is what that looks like:  
+Here is what that looks like: 
+ 
 ![Excel screenshot with formula '=ROUND((DATEDIF(TODAY(),G2,"d") divided by 7) times D2 divided by C2,0)', affected cell highlighted](../images/lesson-forecast/image9.png)  
 *Calculate remaining lessons by reversing the formula.*
 
@@ -65,7 +66,8 @@ Finally, I revisit the original formula to get the remaining weeks by using the 
 
 After adding a column to indicate the subject and adding the rest of the subjects, I was successfully able to present a product that Mason could use to keep track of our daughter’s lessons and forecast when we need to purchase further materials. The result is below:  
 ![Excel screenshot showing the subjects taught, with all fields displayed and records calculated, according to formulas written.](../images/lesson-forecast/image7.png)
-*Final forecasting product*  
+*Final forecasting product*
+
 For peace of mind, yes I stated that there were eight subjects, while there are nine present, however ***Science 2*** and ***Wile E. Coyote*** are both science.
 
 ## Conclusion
