@@ -26,20 +26,22 @@ For the weeks, we would first need to find our parameters. Here’s how I broke 
 * Number of days per lesson (L)  
 * Length of week in days worked (W)
 
-I took a sample of what Mason already had to begin to simplify the calculation down to the most basic formula. The intent was to generalize it to the point where it could be scaled and manipulated to fit our needs. At first, I thought we would need to figure out the smallest whole number of weeks it takes to complete a lesson. This did not work, as it would not be generalized enough to apply to all subjects, since it involves more manual calculation on our part. The mistake I had made was thinking of each week in terms of full weeks, rather than the number of days in each week that are taken to work on each subject. Although I was able to calculate the correct number, it was more complicated than it needed to be. Here’s how that looked:  
+I took a sample of what Mason already had to begin to simplify the calculation down to the most basic formula. The intent was to generalize it to the point where it could be scaled and manipulated to fit our needs. At first, I thought we would need to figure out the smallest whole number of weeks it takes to complete a lesson. This did not work, as it would not be generalized enough to apply to all subjects, since it involves more manual calculation on our part. The mistake I had made was thinking of each week in terms of full weeks, rather than the number of days in each week that are taken to work on each subject. Although I was able to calculate the correct number, it was more complicated than it needed to be. Here’s how that looked:
+
 <!-- > ***(Total lessons ÷ Work days) × Days per lesson*** -->
-> $$\large{(Total\ lessons\ \div\ Work\ days)}\times{Days\ per\
+$$\large{(Total\ lessons\ \div\ Work\ days)}\times{Days\ per\
  lesson}$$ 
 
 ###  Finalized formula
 
-Of course, this isn’t a bad approach, but I wasn’t thinking of it in terms of conversion of Lessons \-\> Weeks. When I finally realized that it’s best to think about it in terms of converting units (thanks to Mason’s input, based on his experience in chemistry), it made much more sense:  
+Of course, this isn’t a bad approach, but I wasn’t thinking of it in terms of conversion of Lessons \-\> Weeks. When I finally realized that it’s best to think about it in terms of converting units (thanks to Mason’s input, based on his experience in chemistry), it made much more sense:
+
 <!-- > ***(Lessons × Days per Lesson ) ÷ Days per Week \= Weeks*** -->
-> $$\large{(Lessons\times Days\ per\ lesson)}\div {Days\ per\ week} = Weeks$$
+$$\large{(Lessons\times Days\ per\ lesson)}\div {Days\ per\ week} = Weeks$$
 
 What this broke down to is total lessons (T) times the days per lesson (D), divided by days per week (W):
 
-> $$\large\frac{T\times D}{W}$$
+$$\large\frac{T\times D}{W}$$
 
 ## The Work
 
@@ -53,7 +55,8 @@ I found it to be simpler than I had imagined previously. A simple calculation of
 ![Excel screenshot with formula '=F2+(E2 times 7)', affected cell highlighted.](../images/lesson-forecast/image4.png)  
 *Calculate the end date based on the start date and the number of weeks to completion.*
 
-The next part of this problem was tricky since it isn’t as simple to calculate the remaining lessons in Excel. After a bit of research, I found the less often used **DATEDIF()** function, which takes two dates and returns the difference in whichever unit you indicate. For instance, DATEDIF(start\_date, end\_date, "d") would return the difference in days. One can extrapolate what *“m”* or *“y”* returns. This is well and good, however, we don’t need the result in days, we need it in weeks, so I divided it by seven. I found it best to work the original formula in reverse to find the remaining lessons. In other words:  
+The next part of this problem was tricky since it isn’t as simple to calculate the remaining lessons in Excel. After a bit of research, I found the less often used **DATEDIF()** function, which takes two dates and returns the difference in whichever unit you indicate. For instance, DATEDIF(start\_date, end\_date, "d") would return the difference in days. One can extrapolate what *“m”* or *“y”* returns. This is well and good, however, we don’t need the result in days, we need it in weeks, so I divided it by seven. I found it best to work the original formula in reverse to find the remaining lessons. In other words:
+
 $$\large\frac{DateDiff\times W}{D}$$
 
 Here is what that looks like: 
