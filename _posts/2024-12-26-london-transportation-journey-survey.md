@@ -2,6 +2,7 @@
 layout: post
 title: Data Analysis Report - London Transportation Journey Survey
 categories: [Data Analysis, SQL]
+excerpt: This report analyzes data provided by Transport for London (TFL) from their Rolling Origin and Destination Survey (RODS). RODS models typical passenger behaviors on the London Underground system, providing insights beyond standard usage statistics by including motivations for travel, such as commuting for work or leisure activities.
 ---
 
 ## Introduction
