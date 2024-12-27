@@ -10,4 +10,6 @@ I love the process of creating websites, developing an understanding of datasets
 
 ### Connect with me:
 
-<a href="https://www.linkedin.com/in/bridget-s-flanery/" target="_blank"><img align="left" src="/images/social/linkedin.svg" alt="Bridget Flanery | LinkedIn" width="21px"/></a> <a href="https://www.facebook.com/bridget.s.flanery" target="_blank"><img align="left" src="/images/social/facebook.svg" alt="Bridget Flanery | Facebook" width="21px"/></a> <a href="mailto:bridget.s.flanery@gmail.com" target="_blank"><img align="left" src="/images/social/envelope.svg" alt="Bridget Flanery | Email" width="21px"/></a>
+<a href="https://www.linkedin.com/in/bridget-s-flanery/" target="_blank"><img align="left" src="/images/social/linkedin.svg" alt="Bridget Flanery | LinkedIn" width="21px"/></a>
+<a href="https://www.facebook.com/bridget.s.flanery" target="_blank"><img align="left" src="/images/social/facebook.svg" alt="Bridget Flanery | Facebook" width="21px"/></a>
+<a href="mailto:bridget.s.flanery@gmail.com" target="_blank"><img align="left" src="/images/social/envelope.svg" alt="Bridget Flanery | Email" width="21px"/></a>
