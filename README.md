@@ -12,7 +12,7 @@ I love the process of creating websites, developing an understanding of datasets
 
 <a href="https://www.linkedin.com/in/bridget-s-flanery/" target="_blank"><img align="left" src="/images/social/linkedin.png" alt="Bridget Flanery | LinkedIn" width="21px"/></a>
 <a href="https://www.facebook.com/bridget.s.flanery" target="_blank"><img align="left" src="/images/social/facebook.png" alt="Bridget Flanery | Facebook" width="21px"/></a>
-<a href="mailto:bridget.s.flanery@gmail.com" target="_blank"><img align="left" src="/images/social/envelope.png" alt="Bridget Flanery | Email" width="21px"/></a>
+<a href="mailto:bridget.s.flanery@gmail.com" target="_blank"><img align="left" src="/images/social/email.png" alt="Bridget Flanery | Email" width="21px"/></a>
 <br/> 
 - 💬 If you have any questions/feedback, please do not hesitate to reach out to me!
 
